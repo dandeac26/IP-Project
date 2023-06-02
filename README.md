@@ -3,10 +3,11 @@
 ****
 <h4> Student: Deac Dan Cristian</h4>
 
+# Requirements : 
+
 **Interesting special effects on color images**.
   
   •	you’ll study some interesting special effects that can be applied on color images.
-  
   •	you’ll implement a set of them (the number depends on the difficulty). 
 
 
