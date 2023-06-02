@@ -6,32 +6,25 @@
 namespace utcn::ip {
 class Project : public Lab {
   static inline std::map<int, std::string> LAB_MENU = {
-      {1,
-       "Copy the R, G and B channels of a color, RGB24 image (CV_8UC3 type) "
-       "into three matrices of type CV_8UC1 (grayscale images)"},
-      {2,
-       "Convert a color RGB24 image (CV_8UC3 type) to a grayscale image "
-       "(CV_8UC1)"},
-      {3, "Converting from grayscale to black and white"},
-      {4,
-       "Compute the H, S and V values from the R, G, B channels of an image"},
-      {5,
-       "Check if the position indicated by the pair (i,j) (row, column) is "
-       "inside the image img"},
-      {6, "test"},
+      {11, "Select image file"},
+      {1, "Convert Color to grayscale"},
+      {2, "BLACK AND WHITE: converts an image to black and white"},
+      {3, "SEPIA filter: adds a warm brown color to the image"},
+      {4, "VIGNETTE filter: adds dark faded edges to an image"},
+      {5, "Cat ears.. yes cat years, Attila's idea"},
   };
 
-  static void testSplitRGB();
+  static void testVignette();
 
   static void testColorToGrayscale();
 
   static void testColorToBW();
 
-  static void testRGBToHSV();
+  static void testSepiaFilter();
 
-  static void testBGR2HSV();
+  static void selectImageFile();
 
-  static void testIsInside();
+  static void addCatEars();
 
  public:
   void runLab() override;
